@@ -1,0 +1,129 @@
+/* Start Footer */
+footer {
+    background-color: #E2E2E2;
+    padding-top: 30px;
+    margin-top: 50px;
+    .gallery, .info, .contact {
+        @media #{$minSmall} {
+            float: $float-left;
+        }
+        @media #{$maxMobile} {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+    .gallery {
+        @media #{$minSmall} {
+            width: 100%
+        }
+        @media #{$minMedium} {
+            width: 50%;
+        }
+        .img-box {
+            overflow: hidden;
+            margin-bottom: 20px;
+            img {
+                @media #{$maxMobile} {
+                    margin-bottom: 10px;
+                }
+                @media #{$minSmall} {
+                    float: $float-left;
+                }
+                width: 150px;
+                height: 150px;
+            } 
+            .text {
+                @media #{$minSmall} {
+                    float: $float-left;
+                    width: calc(100% - 180px);
+                    margin-right: 15px;
+                    margin-left: 15px;
+                }
+                h4 {
+                    color: $redColor;
+                    margin : 0;
+                }
+                p {
+                    color: #888;
+                    line-height: 1.9;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .info {
+        @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
+        ul {
+            color: #888;
+            line-height: 1.8;
+            li {
+                span {
+                    color: $redColor;
+                }
+            }
+        }
+        h4 {
+            color: #888;
+            margin-bottom: 0px;
+        }
+        p {
+            color: #888;
+            margin-top: 5px;
+        }
+    }
+    .contact {
+        @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
+        input[type="text"], 
+        input[type="email"],
+        textarea {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            width: 100%
+        }
+        textarea{
+            resize: none;
+            height: 130px;
+        }
+    }
+    .section-title {
+        color: #444;
+        font-weight: normal;
+    }
+    .copyright {
+        padding: 30px 0;
+        border-top: 1px solid #C5C5C5;
+        overflow: hidden;
+        color: $greyColor;
+        @media #{$maxMobile} {
+            text-align: center;
+        }
+        .copy-text, .author {
+            @media #{$minSmall} {
+                float: $float-left;
+                width: 50%
+            }
+        }
+        .author {
+            @media #{$maxMobile} {
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+            @media #{$minSmall} {
+                text-align: $text-right;
+            }
+        }
+    }
+}
+/* End Footer */
